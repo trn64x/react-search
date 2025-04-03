@@ -6,7 +6,7 @@ type Post = {
 }
 export default async function DataValueFind({ searchParams }: { searchParams: Promise<{ [key: string]: string | string[] | undefined }> }) {
     const params = await searchParams;
-    const titleparameter = typeof params.email === "string" ? params.email : "";
+    const titleparameter = typeof params.query === "string" ? params.query : "";
     const url = 'https://jsonplaceholder.typicode.com/posts';
     
     try {

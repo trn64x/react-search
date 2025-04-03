@@ -1,9 +1,9 @@
 'use server'
-export async function formDateFn(previousState:{email: FormDataEntryValue | null;}, formData: FormData){
+export async function formDateFn(previousState:{query: FormDataEntryValue | null;}, formData: FormData){
 
-    const email = formData.get("email");
+    const query = formData.get("query");
 
 
-return {email}
+return {query}
 }
 export default formDateFn;
